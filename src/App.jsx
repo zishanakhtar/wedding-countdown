@@ -3,7 +3,7 @@ import confetti from 'canvas-confetti';
 
 const App = () => {
   // --- Standard Countdown Logic (Unchanged) ---
-  const targetDate = "2026-05-02T23:59:59"; 
+  const targetDate = "2026-07-02T23:59:59"; 
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
