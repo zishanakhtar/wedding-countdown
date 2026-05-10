@@ -100,6 +100,13 @@ const App = () => {
       {/* Must be z-10 or higher to sit above the image and overlay.
           Must be relative to respond to the z-index.
       */}
+      <div className='flex items-center justify-center invert'>
+        <img 
+          src="/ornament.png" // Place your transparent mandala PNG in the /public folder
+          alt="Mandala Decor"
+          className="absolute w-[400px] md:w-[600px] opacity-20 animate-spin-slow pointer-events-none"
+        />
+      </div>
       <div className="relative z-20 flex min-h-screen flex-col items-center justify-center p-6 text-center">
         <div className="pt-4 pb-16 text-center">
           <h2 
