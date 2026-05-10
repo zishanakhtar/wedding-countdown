@@ -41,14 +41,22 @@ const App = () => {
 
   const scrollToVenue = () => {
   const element = document.getElementById('venue-section');
-  
-  if (element) {
-    element.scrollIntoView({ 
-      behavior: 'smooth', 
-      block: 'start' 
+    if (element) {
+    // Calculate exact position
+    const topOffset = element.getBoundingClientRect().top + window.pageYOffset;
+
+    window.scrollTo({
+      top: topOffset,
+      behavior: 'smooth'
     });
-  } else {
-    console.warn("Venue element not found. Check if the ID matches exactly.");
+
+    // CRITICAL: This "unlocks" the scroll context once the animation finishes
+    // It ensures the browser doesn't try to force the focus on the bottom element
+    setTimeout(() => {
+      element.setAttribute('tabindex', '-1');
+      element.focus({ preventScroll: true });
+      element.blur();
+    }, 1000); 
   }
   };
 
@@ -63,8 +71,8 @@ const App = () => {
       // Total height of the page minus the visible screen height
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       
-      // Fade out when the user has scrolled 80% of the way down
-      if (scrollTop > scrollHeight * 0.8) {
+      // Fade out when the user has scrolled 60% of the way down
+      if (scrollTop > scrollHeight * 0.6) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -151,9 +159,9 @@ const App = () => {
       <div className="relative z-20 flex min-h-screen flex-col items-center justify-center p-6 text-center">
       <Hero />
       <VenueSection/>
-      <div className='text-red-400'>
+      {/* <div className='text-red-400'>
           &#9829; &#9829; &#9829;
-      </div>
+      </div> */}
       </div>
       <Analytics/>
     </div>
