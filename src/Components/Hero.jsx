@@ -1,4 +1,5 @@
 import Countdown from './Countdown';
+import Floral from '../assets/floral.png';
 
 function Hero() {
   return (
@@ -23,6 +24,13 @@ function Hero() {
           July 05, 2026 • Patna
         </p>
         <p className="mb-12 font-cook text-2xl text-white">Your presence will make our day even more memorable!</p>
+        <div className='flex items-center justify-center h-6'>
+        <img 
+          src={Floral} 
+          alt="Floral Decor"
+          className="absolute w-[400px] md:w-[600px] opacity-40"
+        />
+      </div>
       </div>
     </div>
   )

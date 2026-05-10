@@ -142,14 +142,14 @@ const App = () => {
       */}
       <div className='flex items-center justify-center invert'>
         <img 
-          src={Ornament} // Place your transparent mandala PNG in the /public folder
+          src={Ornament} 
           alt="Mandala Decor"
           className="absolute w-[400px] md:w-[600px] opacity-20 animate-spin-slow pointer-events-none"
         />
       </div>
+
       <div className="relative z-20 flex min-h-screen flex-col items-center justify-center p-6 text-center">
       <Hero />
-      
       <VenueSection/>
       <div className='text-red-400'>
           &#9829; &#9829; &#9829;
