@@ -10,7 +10,7 @@ const VenueSection = () => {
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueAddress)}`;
 
   return (
-    <section className="w-full bg-black/40 backdrop-blur-lg py-20 px-6 border-t border-white/10 rounded-xl">
+    <section id="venue-section" className="w-full bg-black/40 backdrop-blur-lg py-20 px-6 border-t border-white/10 rounded-xl">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="font-cookie text-5xl md:text-6xl text-white mb-6">The Venue</h2>
         <p className="font-clean text-white/70 tracking-[0.3em] mb-10 uppercase text-xs md:text-sm">
