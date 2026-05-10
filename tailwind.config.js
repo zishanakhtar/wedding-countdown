@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        cook: ['Cookie', 'cursive']
+        cook: ['Cookie', 'cursive'],
+        amiri: ['Amiri', 'serif']
       },
     },
   },

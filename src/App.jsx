@@ -66,7 +66,7 @@ const App = () => {
   }, []);
 
   const timerComponents = Object.entries(timeLeft).map(([unit, value]) => (
-    <div key={unit} className="flex flex-col items-center justify-center p-2 min-w-[70px]">
+    <div key={unit} className="flex flex-col items-center justify-center p-2 min-w-[70px] rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
       <span className="text-3xl md:text-5xl font-light text-white">
         {value.toString().padStart(2, '0')}
       </span>
@@ -101,9 +101,17 @@ const App = () => {
           Must be relative to respond to the z-index.
       */}
       <div className="relative z-20 flex min-h-screen flex-col items-center justify-center p-6 text-center">
+        <div className="pt-4 pb-16 text-center">
+          <h2 
+            dir="rtl" 
+            className="font-amiri text-white text-sm md:text-2xl lg:text-4xl tracking-normal opacity-90 drop-shadow-sm"
+          >
+            بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+          </h2>
+      </div>
         <div className="max-w-2xl">
           <h2 className="text-sm font-medium tracking-[0.3em] text-white uppercase mb-4">
-            Save the Date
+            You're invited to the reception of
           </h2>
           <h1 className="font-cook text-8xl text-white">
             Zishan & Shireen
@@ -115,11 +123,15 @@ const App = () => {
             )}
           </div>
 
-          <p className="mt-6 mb-12 text-white/90 font-light tracking-wide italic">
+          <p className="mt-6 mb-4 text-white/90 font-light tracking-wide italic">
             July 05, 2026 • Patna
           </p>
+          <p className="mb-12 font-cook text-2xl text-white">Your presence will make our day even more memorable!</p>
         </div>
         <VenueSection/>
+        <div className='text-white'>
+            &#9829; Akhtar Reviews
+        </div>
       </div>
             <Analytics/>
     </div>
