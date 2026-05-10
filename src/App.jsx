@@ -22,7 +22,7 @@ const App = () => {
     audio.play().catch(err => console.log("Playback failed:", err));
     
     // Fade-in Logic
-  const fadeDuration = 2000; // 2 seconds
+  const fadeDuration = 5000; // 5 seconds
   const intervalTime = 50;   // Update every 50ms
   const volumeStep = 1 / (fadeDuration / intervalTime);
 
