@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   // --- Standard Countdown Logic (Unchanged) ---
@@ -118,7 +119,7 @@ const App = () => {
           </p>
         </div>
       </div>
-
+            <Analytics/>
     </div>
   );
 };
