@@ -111,13 +111,13 @@ const App = () => {
         <div className="pt-4 pb-16 text-center">
           <h2 
             dir="rtl" 
-            className="font-amiri text-white text-sm md:text-2xl lg:text-4xl tracking-normal opacity-90 drop-shadow-sm"
+            className="font-amiri text-white text-sm md:text-4xl lg:text-4xl tracking-normal opacity-90 drop-shadow-sm"
           >
             بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
           </h2>
       </div>
         <div className="max-w-2xl">
-          <h2 className="text-sm font-medium tracking-[0.3em] text-white uppercase mb-4">
+          <h2 className="text-sm font-medium tracking-[0.1em] text-white uppercase mb-4">
             You're invited to the reception of
           </h2>
           <h1 className="font-cook text-8xl text-white">
