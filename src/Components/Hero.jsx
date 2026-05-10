@@ -3,8 +3,8 @@ import Floral from '../assets/floral.png';
 
 function Hero() {
   return (
-      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center p-6 text-center">
-        <div className="pt-4 pb-16 text-center">
+      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center">
+        <div className="pb-12 text-center">
           <h2 
             dir="rtl" 
             className="font-amiri text-white text-4xl tracking-normal opacity-90 drop-shadow-sm"
