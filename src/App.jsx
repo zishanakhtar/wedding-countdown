@@ -95,7 +95,6 @@ const App = () => {
           </div>
         </div>
       ) : (
-    // 1. The Container: Must be 'relative'
     <>
     <ErrorBoundary>
         <MusicPlayer masterAudioRef={audioRef} />
@@ -119,6 +118,7 @@ const App = () => {
       </div>
     </button>
     
+     {/* 1. The Container: Must be 'relative' */}
     <div className="relative min-h-screen w-full overflow-hidden animate-revealContent">
 
       {/* 2. The Background Image Layer */}
