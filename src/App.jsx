@@ -111,7 +111,7 @@ const App = () => {
         <div className="pt-4 pb-16 text-center">
           <h2 
             dir="rtl" 
-            className="font-amiri text-white text-sm md:text-4xl lg:text-4xl tracking-normal opacity-90 drop-shadow-sm"
+            className="font-amiri text-white text-4xl tracking-normal opacity-90 drop-shadow-sm"
           >
             بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
           </h2>
