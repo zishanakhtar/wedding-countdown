@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
+import VenueSection from './assets/Venue';
 
 const App = () => {
   // --- Standard Countdown Logic (Unchanged) ---
@@ -114,10 +115,11 @@ const App = () => {
             )}
           </div>
 
-          <p className="mt-12 text-white/90 font-light tracking-wide italic">
-            July 03, 2026 • Nawada
+          <p className="mt-6 mb-12 text-white/90 font-light tracking-wide italic">
+            July 05, 2026 • Patna
           </p>
         </div>
+        <VenueSection/>
       </div>
             <Analytics/>
     </div>
