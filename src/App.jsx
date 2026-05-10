@@ -5,7 +5,7 @@ import VenueSection from './assets/Venue';
 
 const App = () => {
   // --- Standard Countdown Logic (Unchanged) ---
-  const targetDate = "2026-07-04T23:59:59"; 
+  const targetDate = "2026-07-05T20:00:00"; 
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
@@ -136,8 +136,8 @@ const App = () => {
           <p className="mb-12 font-cook text-2xl text-white">Your presence will make our day even more memorable!</p>
         </div>
         <VenueSection/>
-        <div className='text-white'>
-            &#9829; Akhtar Reviews
+        <div className='text-red-400'>
+            &#9829; &#9829; &#9829;
         </div>
       </div>
             <Analytics/>
