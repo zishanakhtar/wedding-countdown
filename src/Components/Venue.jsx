@@ -18,7 +18,7 @@ const VenueSection = () => {
           {venueAddress}
         </p>
 
-        <div className="w-full h-[400px] grayscale-[20%] invert-[90%] hue-rotate-[180deg] rounded-2xl overflow-hidden shadow-2xl border border-white/20 mb-10">
+        <div className="w-full h-[400px] grayscale-[20%] invert-[90%] hue-rotate-[180deg] rounded-2xl overflow-hidden shadow-2xl border-2 border-black mb-10">
           <iframe
             title="Venue Map"
             width="100%"
