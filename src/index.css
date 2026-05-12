@@ -110,7 +110,7 @@
   }
   85% {
     stroke-dashoffset: 0;
-    fill: rgba(255, 255, 255, 0.8);
+    fill: rgba(255, 255, 255, 1);
   }
   100% {
     stroke-dashoffset: 0;
@@ -121,5 +121,5 @@
 .animate-handwriting {
   stroke-dasharray: 30000; 
   stroke-dashoffset: 30000;
-  animation: drawText 8s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+  animation: drawText 15s cubic-bezier(0.45, 0, 0.55, 1) forwards;
 }
