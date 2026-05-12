@@ -16,9 +16,26 @@ function Hero() {
         <h2 className="text-sm font-medium tracking-[0.1em] text-white uppercase mb-4">
           You're invited to the reception of
         </h2>
-        <h1 className="font-cook text-8xl text-white">
-          Zishan & Shireen
-        </h1>
+        <div className="relative top-[15%] left-0 w-full flex items-center justify-center pointer-events-none z-10">
+          <svg 
+            className="w-[80vw] h-auto overflow-visible" 
+            viewBox="0 0 3000 1000" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text
+              x="50%"
+              y="50%"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              className="font-cook text-[36rem] md:text-[50rem] fill-none stroke-white stroke-[8] animate-handwriting"
+              style={{ 
+                filter: 'drop-shadow(0 0 100px rgba(255,255,255,0.7))'
+              }}
+            >
+              Zishan & Shireen
+            </text>
+          </svg>
+        </div>
         <Countdown />
         <p className="mt-6 mb-4 text-white/90 font-light tracking-wide italic">
           July 05, 2026 • Patna
