@@ -9,7 +9,7 @@ function Hero() {
             dir="rtl" 
             className="font-amiri text-white text-4xl tracking-normal opacity-90 drop-shadow-sm"
           >
-            بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
           </h2>
       </div>
       <div className="max-w-2xl">
