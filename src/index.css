@@ -3,14 +3,64 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes reveal {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Page Reveal Animation */
+@keyframes revealFromViewportCenter {
+  0% { 
+    clip-path: polygon(0 49.5vh, 100% 49.5vh, 100% 50.5vh, 0 50.5vh);
+    opacity: 0;
+  }
+  /* Faster opacity fade-in (first 1.5s) so content is visible while opening */
+  20% {
+    opacity: 0.8;
+  }
+  100% { 
+    clip-path: polygon(0 -500%, 100% -500%, 100% 500%, 0 500%);
+    opacity: 1;
+  }
+}
+
+@keyframes lineTop {
+  0% { transform: translateY(50vh); opacity: 0; }
+  5% { opacity: 1; } 
+  90% { opacity: 1; } /* Keep line visible for most of the 8s */
+  100% { transform: translateY(0vh); opacity: 0; }
+}
+
+@keyframes lineBottom {
+  0% { transform: translateY(50vh); opacity: 0; }
+  5% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
 }
 
 .animate-revealContent {
-  animation: reveal 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  position: relative;
+  /* Duration updated to 8s */
+  animation: revealFromViewportCenter 15s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
+.animate-revealContent::before,
+.animate-revealContent::after {
+  content: "";
+  position: fixed; 
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.animate-revealContent::before {
+  animation: lineTop 15s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-revealContent::after {
+  animation: lineBottom 15s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
 
 .animate-fadeIn {
   animation: fadeIn 2s ease-in;
@@ -44,4 +94,32 @@
 .animate-wave-3 {
   animation: soundWave 1.2s ease-in-out infinite;
   animation-delay: 0.4s;
+}
+
+
+
+/* Name handwriting animation */
+@keyframes drawText {
+  0% {
+    stroke-dashoffset: 30000; /* Increased to 40k for the ultra-scale */
+    fill: rgba(255, 255, 255, 0);
+  }
+  20% {
+    stroke-dashoffset: 30000;
+    fill: rgba(255, 255, 255, 0);
+  }
+  85% {
+    stroke-dashoffset: 0;
+    fill: rgba(255, 255, 255, 1);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgba(255, 255, 255, 1);
+  }
+}
+
+.animate-handwriting {
+  stroke-dasharray: 30000; 
+  stroke-dashoffset: 30000;
+  animation: drawText 15s cubic-bezier(0.45, 0, 0.55, 1) forwards;
 }
