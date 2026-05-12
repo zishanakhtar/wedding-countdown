@@ -27,7 +27,7 @@ function Hero() {
               y="50%"
               textAnchor="middle"
               dominantBaseline="middle"
-              className="font-cook text-[38rem] md:text-[50rem] fill-none stroke-white stroke-[8] animate-handwriting"
+              className="font-cook text-[38rem] md:text-[46rem] fill-none stroke-white stroke-[8] animate-handwriting"
               style={{ 
                 filter: 'drop-shadow(0 0 100px rgba(255,255,255,0.7))'
               }}
