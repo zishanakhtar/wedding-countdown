@@ -14,7 +14,7 @@ function Hero() {
       </div>
       <div className="max-w-2xl">
         <h2 className="text-sm font-medium tracking-[0.1em] text-white uppercase mb-4">
-          You're invited to the reception of
+          We request the pleasure of your company and blessings to celebrate the reception of
         </h2>
         <div className="relative top-[15%] left-0 w-full flex items-center justify-center pointer-events-none z-10">
           <svg 
