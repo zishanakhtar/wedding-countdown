@@ -88,6 +88,22 @@ const App = () => {
       {!showInvitation ? (
         /* --- LANDING SCREEN --- */
         <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black transition-opacity duration-1000">
+          <div 
+            /* Changed inset-0 to fixed and min-h-screen to ensure it locks to the viewport */
+            className="fixed inset-0 z-0 w-full min-h-screen overflow-hidden"
+          >
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm scale-105 animate-fadeIn"
+              style={{ 
+                backgroundImage: `url('https://images.unsplash.com/photo-1612611450279-51b46599e6ff?q=80&w=1036')`,
+                /* Ensures the image doesn't 'jump' when the mobile browser UI hides/shows */
+                height: '100dvh' 
+              }}
+            />
+            {/*The Overlay Layer (Optional but helps contrast) */}
+            <div className="absolute inset-0 z-10 bg-black/10" />
+          </div>
+
           <div className="text-center animate-fadeIn px-4">
             <h2 className="font-cook text-4xl md:text-6xl mb-8 opacity-80">
               Dawat - e - Walima
@@ -151,7 +167,7 @@ const App = () => {
       </div>
 
       {/* 3. The Overlay Layer (Optional but helps contrast) */}
-      <div className="absolute inset-0 z-10 bg-black/30" />
+      <div className="absolute inset-0 z-10 bg-black/20" />
 
       {/* 4. The Content Layer */}
       {/* Must be z-10 or higher to sit above the image and overlay.
