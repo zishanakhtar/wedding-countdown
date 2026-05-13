@@ -93,7 +93,7 @@ const App = () => {
             className="fixed inset-0 z-0 w-full min-h-screen overflow-hidden"
           >
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm scale-105 animate-fadeIn"
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-md scale-105 animate-fadeIn"
               style={{ 
                 backgroundImage: `url('https://images.unsplash.com/photo-1612611450279-51b46599e6ff?q=80&w=1036')`,
                 /* Ensures the image doesn't 'jump' when the mobile browser UI hides/shows */
@@ -167,7 +167,7 @@ const App = () => {
       </div>
 
       {/* 3. The Overlay Layer (Optional but helps contrast) */}
-      <div className="absolute inset-0 z-10 bg-black/20" />
+      <div className="absolute inset-0 z-10 bg-black/10" />
 
       {/* 4. The Content Layer */}
       {/* Must be z-10 or higher to sit above the image and overlay.
