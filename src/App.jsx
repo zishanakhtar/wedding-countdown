@@ -94,7 +94,7 @@ const App = () => {
             </h2>
             <button 
               onClick={handleOpen}
-              className="group relative px-12 py-4 border border-white/20 rounded-full font-amiri tracking-[0.2em] uppercase text-sm hover:border-white/60 transition-all duration-500"
+              className="group relative px-12 py-4 border-4 border-white/60 md:border-white/20 rounded-full font-amiri tracking-[0.2em] uppercase text-sm hover:border-white/60 transition-all duration-500"
             >
               <span className="relative z-10">Open Invitation</span>
               {/* Subtle hover fill effect */}
