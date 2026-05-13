@@ -13,8 +13,8 @@ function Hero() {
           </h2>
       </div>
       <div className="max-w-2xl">
-        <h2 className="text-sm font-medium tracking-[0.1em] text-white uppercase mb-4 px-4">
-          We request the pleasure of your company and blessings to celebrate the reception of
+        <h2 className="text-xs font-medium tracking-[0.1em] text-white uppercase mb-4 px-2">
+          We request the pleasure of your company & blessings to celebrate the reception of
         </h2>
         <div className="relative top-[15%] left-0 w-full flex items-center justify-center pointer-events-none z-10">
           <svg 
