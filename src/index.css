@@ -104,14 +104,20 @@
     stroke-dashoffset: 30000; /* Increased to 40k for the ultra-scale */
     fill: rgba(255, 255, 255, 0);
   }
-  20% {
+  10% {
     stroke-dashoffset: 30000;
     fill: rgba(255, 255, 255, 0);
   }
-  85% {
-    stroke-dashoffset: 0;
+  30% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  45% {
     fill: rgba(255, 255, 255, 1);
   }
+  /* 90% {
+    stroke-dashoffset: 0;
+    fill: rgba(255, 255, 255, 1);
+  } */
   100% {
     stroke-dashoffset: 0;
     fill: rgba(255, 255, 255, 1);
@@ -121,5 +127,5 @@
 .animate-handwriting {
   stroke-dasharray: 30000; 
   stroke-dashoffset: 30000;
-  animation: drawText 15s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+  animation: drawText 20s cubic-bezier(0.45, 0, 0.55, 1) forwards;
 }

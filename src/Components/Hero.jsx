@@ -38,7 +38,7 @@ function Hero() {
         </div>
         <Countdown />
         <p className="mt-6 mb-4 text-white/90 font-light tracking-wide italic">
-          July 05, 2026 • Patna
+          Sunday • July 05, 2026 • Patna
         </p>
         <p className="mb-12 font-cook text-2xl text-white">Your presence will make our day even more memorable!</p>
         <div className='flex items-center justify-center'>
