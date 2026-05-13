@@ -10,8 +10,8 @@
     opacity: 0;
   }
   /* Faster opacity fade-in (first 1.5s) so content is visible while opening */
-  20% {
-    opacity: 0.8;
+  30% {
+    opacity: 1;
   }
   100% { 
     clip-path: polygon(0 -500%, 100% -500%, 100% 500%, 0 500%);
