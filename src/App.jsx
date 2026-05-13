@@ -165,12 +165,9 @@ const App = () => {
         />
       </div>
 
-      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center">
-      <Hero />
-      <VenueSection/>
-      {/* <div className='text-red-400'>
-          &#9829; &#9829; &#9829;
-      </div> */}
+      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center -top-3 md:top-0">
+        <Hero />
+        <VenueSection/>
       </div>
       <Analytics/>
     </div>
