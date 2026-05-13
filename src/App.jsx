@@ -165,7 +165,7 @@ const App = () => {
         />
       </div>
 
-      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center -top-3 md:top-0">
+      <div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center -top-4 md:top-0">
         <Hero />
         <VenueSection/>
       </div>
