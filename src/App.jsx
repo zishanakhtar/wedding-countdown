@@ -89,8 +89,8 @@ const App = () => {
         /* --- LANDING SCREEN --- */
         <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black transition-opacity duration-1000">
           <div className="text-center animate-fadeIn px-4">
-            <h2 className="font-amiri text-xl md:text-2xl mb-8 opacity-80">
-              Reception Invitation
+            <h2 className="font-cook text-4xl md:text-6xl mb-8 opacity-80">
+              Dawat - e - Walima
             </h2>
             <button 
               onClick={handleOpen}
