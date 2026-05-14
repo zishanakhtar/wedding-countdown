@@ -95,17 +95,17 @@ const App = () => {
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm scale-105 animate-fadeIn"
               style={{ 
-                backgroundImage: `url('/cover.png')`,
+                backgroundImage: `url('/cover_2.png')`,
                 /* Ensures the image doesn't 'jump' when the mobile browser UI hides/shows */
                 height: '100dvh' 
               }}
             />
             {/*The Overlay Layer (Optional but helps contrast) */}
-            <div className="absolute inset-0 z-10 bg-black/10" />
+            <div className="absolute inset-0 z-10 bg-black/30" />
           </div>
 
           <div className="text-center animate-fadeIn px-4">
-            <h2 className="font-cook text-4xl md:text-6xl mb-8 opacity-80">
+            <h2 className="font-cook text-4xl md:text-6xl mb-8 opacity-90 text-shadow shadow-black">
               Dawat - e - Walima
             </h2>
             <button 
