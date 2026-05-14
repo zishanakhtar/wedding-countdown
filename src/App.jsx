@@ -95,7 +95,7 @@ const App = () => {
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm scale-105 animate-fadeIn"
               style={{ 
-                backgroundImage: `url('../src/assets/cover.png')`,
+                backgroundImage: `url('/cover.png')`,
                 /* Ensures the image doesn't 'jump' when the mobile browser UI hides/shows */
                 height: '100dvh' 
               }}
