@@ -81,10 +81,15 @@ function Countdown() {
   return (
     <div>
       <div className="flex justify-center gap-2 md:gap-4">
-            {timerComponents.length ? timerComponents : (
-              <span className="text-2xl font-light text-white">The Celebration Has Begun!</span>
-            )}
-          </div>
+        {timerComponents.length ? timerComponents : (
+          <span className="text-2xl font-light text-white">The Celebration Has Begun!</span>
+        )}
+      </div>
+      {timerComponents.length > 0 && (
+        <p className="font-cook mt-2 text-center text-white text-xl">
+          Until we celebrate our new beginning
+        </p>
+      )}
     </div>
   )
 }
