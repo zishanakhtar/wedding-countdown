@@ -101,7 +101,7 @@ const App = () => {
               }}
             />
             {/*The Overlay Layer (Optional but helps contrast) */}
-            <div className="absolute inset-0 z-10 bg-black/30" />
+            <div className="absolute inset-0 z-10 bg-black/20" />
           </div>
 
           <div className="text-center animate-fadeIn px-4">

@@ -87,7 +87,7 @@ function Countdown() {
       </div>
       {timerComponents.length > 0 && (
         <p className="font-cook mt-2 text-center text-white text-xl">
-          Until we celebrate our new beginning
+          Until we celebrate our new beginning, Insha Allah
         </p>
       )}
     </div>
