@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react';
 
 function ScrollTop() {
 
-    // scroll to venue
+    // scroll to top
   const ScrollToTop = () => {
-  // 1. Changed behavior to scroll to the absolute top of the page
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
@@ -16,14 +15,14 @@ function ScrollTop() {
     if (mainContent) {
       mainContent.setAttribute('tabindex', '-1');
       mainContent.focus({ preventScroll: true });
-      // Keep it focused or blur depending on whether you want a visible focus ring on the body
+      // Keep it focused or blur depending on whether we want a visible focus ring on the body
       mainContent.blur(); 
     }
   }, 1000); 
 };
 
 // Scroll to top button visibility
-const [isVisible, setIsVisible] = useState(false); // Default to false since you start at the top
+const [isVisible, setIsVisible] = useState(false); // Default to false since we start at the top
 
 useEffect(() => {
   const handleScroll = () => {
