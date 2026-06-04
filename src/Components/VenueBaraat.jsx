@@ -38,13 +38,13 @@ const VenueBaraat = () => {
           Open in Google Maps App
         </a>
       </div>
-      <div className='mt-16 flex items-center justify-center'>
+      {/* <div className='mt-16 flex items-center justify-center'>
         <img 
           src={FloralBottom} 
           alt="Floral Bottom Decor"
           className="absolute w-[400px] md:w-[600px] opacity-60"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
