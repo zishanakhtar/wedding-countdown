@@ -12,6 +12,7 @@ import ScrollTop from "./Components/ScrollTop";
 // Import your new Wedding component here
 import Wedding from "./Components/Wedding"; 
 import VenueBaraat from "./Components/VenueBaraat";
+import ScrollTopWedding from "./Components/ScrollTopWedding";
 
 const App = () => {
   const [showInvitation, setShowInvitation] = useState(false);
@@ -88,7 +89,8 @@ const App = () => {
           {/* Floating Scroll Buttons */}
           <ScrollVenue />
           {isWeddingGuest && <ScrollToWeddingVenue />}
-          <ScrollTop />
+          {isWeddingGuest && <ScrollTopWedding />}
+          {!isWeddingGuest && <ScrollTop />}
           
           {/* 1. The Container: Must be 'relative' */}
           <div className="relative min-h-screen w-full overflow-hidden animate-revealContent">
