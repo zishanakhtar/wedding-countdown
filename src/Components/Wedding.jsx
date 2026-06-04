@@ -10,18 +10,18 @@ export default function Wedding() {
 //   };
 
   return (
-    <section className="w-[98%] mx-auto px-2 py-4 text-center animate-fade-in">
+    <section className="w-[98%] mx-auto px-2 py-2 text-center animate-fade-in">
       {/* Decorative Top Accent */}
-      <div className="flex items-center justify-center gap-3 mb-6">
+      <div className="flex items-center justify-center gap-3 mb-8 mt-8">
         <div className="h-[1px] w-12 bg-amber-300/60" />
         <span className="text-amber-600 text-xl font-serif">✨</span>
         <div className="h-[1px] w-12 bg-amber-300/60" />
       </div>
 
       {/* Heading */}
-      <h2 className="font-cook text-3xl md:text-5xl text-slate-200 tracking-wide">
+      {/* <h2 className="font-cook text-3xl md:text-5xl text-slate-200 tracking-wide">
         You're also invited to attend the Baraat on 03 July, 2026 from our residence to
-      </h2>
+      </h2> */}
 
       {/* Details Card */}
       {/* <div className="bg-white/60 backdrop-blur-sm border border-stone-200/80 rounded-2xl p-6 md:p-10 shadow-sm max-w-xl mx-auto space-y-6"> */}
