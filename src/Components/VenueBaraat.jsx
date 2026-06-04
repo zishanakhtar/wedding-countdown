@@ -45,7 +45,7 @@ const VenueBaraat = () => {
           className="absolute w-[400px] md:w-[600px] opacity-60"
         />
       </div> */}
-      <div className="flex items-center justify-center gap-3 mb-6">
+      <div className="flex items-center justify-center gap-3 m-3">
         <div className="h-[1px] w-12 bg-amber-300/60" />
         <span className="text-amber-600 text-xl font-serif">✨</span>
         <div className="h-[1px] w-12 bg-amber-300/60" />
