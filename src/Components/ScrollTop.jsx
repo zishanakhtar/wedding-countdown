@@ -29,7 +29,7 @@ useEffect(() => {
     // Distance from top of the page
     const scrollTop = window.scrollY;
     
-    // Inverted Logic: Show the button only after scrolling down 1800px from the top
+    // Inverted Logic: Show the button only after scrolling down 1600px from the top
     if (scrollTop > 1600) {
       setIsVisible(true);
     } else {
