@@ -11,9 +11,9 @@ const VenueBaraat = () => {
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueAddress)}`;
 
   return (
-    <section id="venue-wedding" className="w-[98%] bg-black/40 backdrop-blur-lg pt-10 pb-16 px-6 border-t border-white/10 rounded-xl">
+    <section id="venue-wedding" className="w-[98%] bg-black/40 backdrop-blur-lg pt-10 pb-8 px-6 border-t border-white/10 rounded-xl">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-cook text-5xl md:text-7xl text-white mb-4">Wedding Venue</h2>
+        <h2 className="font-cook text-2xl md:text-4xl text-white mb-4">You're also invited to attend the Baraat on 03 July, 2026 from our residence to</h2>
         <p className="text-white/90 tracking-[0.2em] mb-4 uppercase text-xs md:text-sm">
           {venueAddress}
         </p>
@@ -38,18 +38,18 @@ const VenueBaraat = () => {
           Open in Google Maps App
         </a>
       </div>
-      {/* <div className='mt-16 flex items-center justify-center'>
+      <div className='mt-16 flex items-center justify-center'>
         <img 
           src={FloralBottom} 
           alt="Floral Bottom Decor"
           className="absolute w-[400px] md:w-[600px] opacity-60"
         />
-      </div> */}
-      <div className="flex items-center justify-center gap-3 m-3">
+      </div>
+      {/* <div className="flex items-center justify-center gap-3 m-3">
         <div className="h-[1px] w-12 bg-amber-300/60" />
         <span className="text-amber-600 text-xl font-serif">✨</span>
         <div className="h-[1px] w-12 bg-amber-300/60" />
-      </div>
+      </div> */}
     </section>
   );
 };
