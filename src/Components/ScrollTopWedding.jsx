@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function ScrollTop() {
+function ScrollTopWedding() {
 
     // scroll to top
   const ScrollToTop = () => {
@@ -66,4 +66,4 @@ useEffect(() => {
   )
 }
 
-export default ScrollTop
+export default ScrollTopWedding
