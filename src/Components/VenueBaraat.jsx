@@ -13,7 +13,7 @@ const VenueBaraat = () => {
   return (
     <section id="venue-wedding" className="w-[98%] bg-black/40 backdrop-blur-lg pt-10 pb-8 px-6 border-t border-white/10 rounded-xl">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-cook text-2xl md:text-4xl text-white mb-4">You're also invited to attend the Baraat on<br/>Friday, 03 July, 2026 from our residence to</h2>
+        <h2 className="font-cook text-2xl md:text-4xl text-white mb-4">Witness our 'Qubool Hai' moment on<br/>Friday, 03 July, 2026 as we make our way to</h2>
         <p className="text-white/90 tracking-[0.2em] mb-4 uppercase text-xs md:text-sm">
           {venueAddress}
         </p>
