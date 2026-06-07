@@ -11,14 +11,14 @@ const VenueBaraat = () => {
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueAddress)}`;
 
   return (
-    <section id="venue-wedding" className="w-[98%] bg-black/40 backdrop-blur-lg pt-10 pb-8 px-6 border-t border-white/10 rounded-xl">
+    <section id="venue-wedding" className="w-[98%] bg-black/40 backdrop-blur-lg pt-6 pb-8 px-6 border-t border-white/10 rounded-xl">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-cook text-2xl md:text-4xl text-white mb-4">Witness our 'Qubool Hai' moment on<br/>Friday, 03 July, 2026 as we make our way to</h2>
+        <h2 className="font-cook text-2xl md:text-4xl text-white mb-4">You're also invited to attend the Baraat &<br/>Witness our 'Qubool Hai' moment on<br/>Friday, 03 July, 2026 at</h2>
         <p className="text-white/90 tracking-[0.2em] mb-4 uppercase text-xs md:text-sm">
           {venueAddress}
         </p>
 
-        <div className="w-full h-[400px] grayscale-[20%] invert-[90%] hue-rotate-[180deg] rounded-2xl overflow-hidden shadow-2xl border-2 border-black mb-10">
+        <div className="w-full h-[400px] grayscale-[20%] invert-[90%] hue-rotate-[180deg] rounded-2xl overflow-hidden shadow-2xl border-2 border-black mb-8">
           <iframe
             title="Venue Map"
             width="100%"
