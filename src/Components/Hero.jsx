@@ -13,8 +13,8 @@ function Hero() {
           </h2>
       </div>
       <div className="max-w-2xl">
-        <h2 className="text-xs font-medium tracking-[0.1em] text-white uppercase mb-4 px-2">
-          We request the pleasure of your company & blessings to celebrate the reception of
+        <h2 className="text-md font-medium tracking-[0.1em] text-white uppercase mb-4 px-2">
+          We request the pleasure of your company & blessings to celebrate the wedding of
         </h2>
         <div className="relative top-[15%] left-0 w-full flex items-center justify-center pointer-events-none z-10">
           <svg 
@@ -32,13 +32,13 @@ function Hero() {
                 filter: 'drop-shadow(0 0 30px rgba(255,255,255,0.5))'
               }}
             >
-              Zishan & Shireen
+              Shireen & Zishan
             </text>
           </svg>
         </div>
         <Countdown />
         <p className="mt-6 mb-4 text-white/90 font-light tracking-wide italic">
-          Sunday • 05 July, 2026 • 8:00 PM
+          Friday • 03 July, 2026
         </p>
         <p className="mb-12 font-cook text-2xl text-white">Your presence will make our day even more memorable!</p>
         <div className='flex items-center justify-center'>

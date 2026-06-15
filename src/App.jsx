@@ -6,24 +6,15 @@ import Ornament from './assets/ornament.png'
 import Hero from "./Components/Hero";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import mySound from '../src/assets/song.mp3'
-import ScrollVenue from "./Components/ScrollToVenue";
-import ScrollToWeddingVenue from "./Components/ScrollToWeddingVenue";
-import ScrollTop from "./Components/ScrollTop";
 // Import your new Wedding component here
-import Wedding from "./Components/Wedding"; 
-import VenueBaraat from "./Components/VenueBaraat";
 import ScrollTopWedding from "./Components/ScrollTopWedding";
+import WeddingProgram from "./Components/WeddingProgram";
+import ScrollToWeddingProgram from "./Components/ScrollToWeddingProgram";
+import ScrollToVenue from "./Components/ScrollToVenue";
 
 const App = () => {
   const [showInvitation, setShowInvitation] = useState(false);
   const audioRef = useRef(new Audio(mySound));
-
-  // Initialize wedding access immediately from the URL parameters
-  // This executes exactly once on load, completely avoiding cascading render warnings
-  const [isWeddingGuest] = useState(() => {
-    const params = new URLSearchParams(window.location.search);
-    return params.get('invite') === 'wedding-and-reception';
-  });
 
   const handleOpen = () => {
     const audio = audioRef.current;
@@ -69,7 +60,7 @@ const App = () => {
           <div className="text-center animate-fadeIn px-4">
             {/* Dynamically adjusts heading if they have access to the secret wedding section */}
             <h2 className="font-cook text-4xl md:text-6xl mb-8 opacity-90 text-shadow shadow-black">
-              {isWeddingGuest ? "Nikah & Walima" : "Dawat - e - Walima"}
+              Dawat-e-Nikah
             </h2>
             <button 
               onClick={handleOpen}
@@ -87,10 +78,9 @@ const App = () => {
           </ErrorBoundary>
 
           {/* Floating Scroll Buttons */}
-          <ScrollVenue />
-          {isWeddingGuest && <ScrollToWeddingVenue />}
-          {isWeddingGuest && <ScrollTopWedding />}
-          {!isWeddingGuest && <ScrollTop />}
+          <ScrollToWeddingProgram />
+          <ScrollToVenue/>
+          <ScrollTopWedding/>
           
           {/* 1. The Container: Must be 'relative' */}
           <div className="relative min-h-screen w-full overflow-hidden animate-revealContent">
@@ -121,11 +111,12 @@ const App = () => {
             {/* 5. The Content Layer */}
             <div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center -top-4 md:top-0">
               <Hero />
+              <WeddingProgram/>
               <VenueSection/>
 
               {/* Conditionally displays the Wedding section right above the Walima venue info */}
-              {isWeddingGuest && <Wedding />}
-              {isWeddingGuest && <VenueBaraat />}
+              {/* {isWeddingGuest && <Wedding />}
+              {isWeddingGuest && <VenueBaraat />} */}
             </div>
             <Analytics/>
           </div>
